@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Egresados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/knowledge_graduation_cap_books_icon_182965.png">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize_reset.css">
+    <script src="js/vermas.js"></script>
+</head>
+<body>
+    <div class="overlay fade-out"></div>
+    <header class="header"></header>
+    <div id="contenedor">
+        <div id="main">
+            <style>@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+                @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+                h1,
+                h2,
+                h3,
+                h4 {
+                  color: #2d314d;
+                  font-weight: 500;
+                  text-align: center;
+                  font-family: "Roboto",sans-serif;
+                }
+                .box > .icon { text-align: center; position: relative; }
+                .box > .icon > .info { margin-top: 51px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px 0 10px 0; }
+                .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+                .box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; font-weight: 500; line-height: 20px; padding: 0.5em;}
+                .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 1.5em; margin: 20px;}
+                .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none;background-color: #F0B429;padding: 0.5em;border-radius: 10px;}
+                .box > .icon > .info > .more > a:hover { background-color: #f04e09;color: #e0e0e0;}
+                .box .space { height: 30px; }
+                .via-evento a img{width: 3em;display: inline-block;margin-top: 1em;}
+                .hora{color: #F47920!important;font-weight: 700;} 
+                .fecha{font-weight: 700;color: #005883!important;} 
+                .anuncio {width: 80%;margin: auto;}
+            </style>
+            <body>
+            <div class="container">
+                <div id="paginacion">
+                    <a href="#" class="button" id="prev">Anterior</a>
+                    <a href="#" class="button" id="next">Siguiente</a>
+                </div>
+                <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+                <div class="pagination"  id="contenedor-anuncios">
+                    <div class="post" id="page1" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Informativo de la Red de Radio Universitaria de Colombia.</h3>
+                                        <p class="fecha">RRUC - Viernes 8 a.m.</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=conexion" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Tramando Sentidos.</h3>
+                                        <p class="fecha">ECSAH, 9 a.m.</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=tramando" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Cibersofía</h3>
+                                        <p class="fecha">ECEDU, 10 a.m</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=cibersofia" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="post" id="page2" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Umbral Digital</h3>
+                                        <p class="fecha">ECEDU 11 a.m.</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=umbral+digital" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Barreras invisibles. UNAD Ibagué</h3>
+                                        <p class="fecha">ECBTI y ECSAH 12 m.</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=tramando" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Informativo Institucional</h3>
+                                        <p class="fecha">VIMEP, 2:10 p.m</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=ruv+noticias" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="post" id="page3" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Pasaporte a la U. Programa en vivo</h3>
+                                        <p class="fecha">Transmisión en vivo por T.V UNAD Virtual, viernes 3 p.m</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=cibersofia" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Premio Internacional para la RUV - 3 Puesto</h3>
+                                        <p class="fecha">ECEDU 11 a.m.</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/?s=umbral+digital" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Programación de la semana</h3>
+                                        <p class="fecha">Lunes a domingo - 24/7</p>
+                                        <div class="more">
+                                            <a href="https://docs.google.com/spreadsheets/d/1jeUdMLbXIbeAq0uzU_hud_pD0c_aAY8m4w_A2xTpIcc/pub?hl=es&hl=es&single=true&gid=0&output=html&widget=true" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="post" id="page4" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Voces Unidas - ONU</h3>
+                                        <p class="fecha">Viernes 10 p.m</p>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Programas de tipo Cultural Musical</h3>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/tags_programas/cultural/" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Programas de tipo Académico</h3>
+                                        <div class="more">
+                                            <a href="https://ruv.unad.edu.co/ruvwp/tags_programas/academica/" title="Title Link" target="_blank">Ver más</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script  src="js/script.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $(".header").load("navbar.html");
+    });
+    $(function () {
+        $(".footer").load("footer.html");
+    });
+    </script>
+</body>
+</html>
+

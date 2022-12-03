@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Egresados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/knowledge_graduation_cap_books_icon_182965.png">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize_reset.css">
+    <script src="js/vermas.js"></script>
+</head>
+<body>
+    <div class="overlay fade-out"></div>
+    <header class="header"></header>
+    <div id="contenedor">
+        <div id="main">
+            <h3>¡Esta es la programación de TV UNAD Virtual para esta semana!</h3>
+            <div id="paginacion">
+                <a href="#" class="button" id="prev">Anterior</a>
+                <a href="#" class="button" id="next">Siguiente</a>
+            </div>
+            <div id="anuncio">
+                <div id="contenido-anuncio">
+                    <p>Programación de la semana</p>
+                    <p class="fecha">Programación 24/7. <br>Contacto: Skype ruvunad1</p>
+                </div>
+            </div>
+            <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page1">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Educación y Desarrollo</p>
+                            <p class="fecha">Viernes  8:00 a.m.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka_ivxYGnes-B15K7hQsurJP"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Con Olor a Región</p>
+                            <p class="fecha">Viernes  2:00 p.m.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka8cka_gAYo53lmFchktNEHN"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Noticiero Científico y Cultural Iberoamericano</p>
+                            <p class="fecha">Miércoles 10:00 a.m</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka-1fx3TiwpvRCP1DIDlk73j"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page2">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Comunidad Académica</p>
+                            <p class="fecha">Lunes  11:00 a.m.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka-DbeWkU8ftd-eVUVp0lkFJ"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Comunicación y Mercadeo</p>
+                            <p class="fecha">Martes 8:00 a.m.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka8Hll_c2yqWY8cNZJNSWgNx"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Semilleros de Investigación</p>
+                            <p class="fecha">Jueves 9:00 a.m</p>
+                            <a href="https://www.youtube.com/playlist?list=PLnYwAuuEvka_r3AZ6o0AepsPGuhPInX9Q"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Escuchar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page3">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>PORTAFOLIO SINEP Y SU IMPACTO SIGNIFICATIVO EN LAS REGIONES DE LAS ZONAS ZSUR Y ZCBC</p>
+                            <p class="fecha">Martes 3:00 p.m a 4:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Por una escuela con memoria. Reflexiones desde la academia sobre el informe de la comisión de la verdad.</p>
+                            <p class="fecha">Martes 5:00 p.m a 6:30 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Ser Bienestar</p>
+                            <p class="fecha">Martes 6:00 p.m a 7:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page4">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Cuarta semana Latinoamérica de la Radiología: Innovación, Investigación y extensión en radiología.</p>
+                            <p class="fecha">Martes 6:00 p.m a 9:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Día del administrador de empresa</p>
+                            <p class="fecha">Miércoles 2:00 p.m a 5:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Seminario Itinerante del Sistema Nacional de Consejería: Educación a Distancia, sin distancias.</p>
+                            <p class="fecha">Miércoles 5:00 p.m a 7:30 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page5">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>El neoliberalismo en América Latina y el Caribe: “Lineamientos ideológicos y políticos”. Generalidades.</p>
+                            <p class="fecha">Miércoles 6:00 p.m a 8:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Cuarta semana Latinoamérica de la Radiología: Innovación, Investigación y extensión en radiología.</p>
+                            <p class="fecha">Miércoles 6:00 p.m a 9:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>II Jornada BOECIO Internacional en la UNAD.</p>
+                            <p class="fecha">Jueves 2:00 p.m a 5:30 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page6">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>III Festival  Internacional de música vallenata.</p>
+                            <p class="fecha">Jueves a Sábado de 8:00 a.m a 7:30 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Cuarta semana Latinoamérica de la Radiología: Innovación, Investigación y extensión en radiología.</p>
+                            <p class="fecha">Jueves 6:00 p.m a 9:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Cuarta semana Latinoamérica de la Radiología: Innovación, Investigación y extensión en radiología.</p>
+                            <p class="fecha">Viernes 6:00 p.m a 9:00 p.m</p>
+                            <p class="fecha">Transmisión en vivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script  src="js/script.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $(".header").load("navbar.html");
+    });
+    $(function () {
+        $(".footer").load("footer.html");
+    });
+    </script>
+</body>
+</html>
+

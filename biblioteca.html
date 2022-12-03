@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Egresados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/knowledge_graduation_cap_books_icon_182965.png">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="normalize_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vermas.js"></script>
+</head>
+<body>
+    <div class="overlay fade-out"></div>
+    <header class="header"></header>
+    <div id="contenedor">
+        <div id="main">
+            <h3>Estos son los eventos de biblioteca del mes de Noviembre.</h3>
+            <style>@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+                @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+                h1,
+                h2,
+                h3,
+                h4 {
+                  color: #2d314d;
+                  font-weight: 500;
+                  text-align: center;
+                  font-family: "Roboto",sans-serif;
+                }
+                .box > .icon { text-align: center; position: relative; }
+                .box > .icon > .info { margin-top: 51px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px 0 10px 0; }
+                .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+                .box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; font-weight: 500; line-height: 1em; padding: 0.5em;}
+                .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 0.5em; margin: 20px;}
+                .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none;background-color: #F0B429;padding: 0.5em;border-radius: 10px;}
+                .box > .icon > .info > .more > a:hover { background-color: #f04e09;color: #e0e0e0;}
+                .box .space { height: 30px; }
+                .via-evento a img{width: 3em;display: inline-block;margin-top: 1em;margin-bottom: -1em;}
+                .hora{color: #F47920!important;font-weight: 700;} 
+                .fecha{font-weight: 700;color: #005883!important;} 
+                .anuncio {width: 50em;margin: auto;}
+                @media (max-width: 63.97em) {
+                    .anuncio{
+                        width: 15em;
+                    }
+                }
+            </style>
+            <div id="paginacion">
+                <a href="#" class="button" id="prev">Anterior</a>
+                <a href="#" class="button" id="next">Siguiente</a>
+            </div>
+            <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page1">
+                <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Maratón de bases de datos Ambientalex</h3>
+                                <p class="fecha">Fecha: 01 de Noviembre de 2022</p>
+                                <p class="fecha">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 088879</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94714029199"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                </div>
+                <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Jornada de formación Excel Intermedio sesión 47</h3>
+                                <p class="fecha">Fecha: 02 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 07:30 p.m</p>
+                                <p class="hora">Código de acceso: 966557</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/96092855478"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                </div>
+                <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Redacción de ensayos</h3>
+                                <p class="fecha">Fecha: 03 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 05:00 p.m</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/98175602217?pwd=MnBwZ0tETWt1dEJzOHBtMVozWUhldz09"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page2">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Tertulia dialógica Descubriendo autores</h3>
+                                <p class="fecha">Fecha: 04 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 04:00 p.m</p>
+                                <p class="hora">Código de acceso: 970514</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94138312488"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Maratón de bases de datos: Ebsco</h3>
+                                <p class="fecha">Fecha: 08 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 02:00 p.m</p>
+                                <p class="hora">Código de acceso: 317526</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/97300024411"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Capacitación plataforma CANVA: Editor de presentaciones</h3>
+                                    <p class="fecha">Fecha: 08 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 03:00 p.m</p>
+                                    <p class="hora">Código de acceso: 447470</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94918781347"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page3">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Jornada de capacitación cargue de trabajos, Normas APA y NTC</h3>
+                                <p class="fecha">Fecha: 08 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 04:30 p.m</p>
+                                <p class="hora">Código de acceso: 186979</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/99528503647"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Herramientas innovadoras: Prezzi</h3>
+                                <p class="fecha">Fecha: 09 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 802252</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/97621820205"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Matemáticas desde 0: La circunferencia</h3>
+                                    <p class="fecha">Fecha: 10 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 03:00 p.m</p>
+                                    <p class="hora">Código de acceso: 337392</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94552156087"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page4">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Aprendiendo Inglés Comparatives and superlatives</h3>
+                                <p class="fecha">Fecha: 10 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 05:00 p.m</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/98175602217?pwd=MnBwZ0tETWt1dEJzOHBtMVozWUhldz09"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Taller didáctico: El saber Literario</h3>
+                                <p class="fecha">Fecha: 11 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 06:00 p.m</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/98141224212P"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Capacitación - Nueva base de datos: Construdata</h3>
+                                    <p class="fecha">Fecha: 15 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 03:00 p.m</p>
+                                    <p class="hora">Código de acceso: 424160</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/95441159701"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page5">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Capacitación Nueva base de datos Gestión Humana</h3>
+                                <p class="fecha">Fecha: 15 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 797022</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/91544811036"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Uso de la herramienta Genially para SINEP</h3>
+                                <p class="fecha">Fecha: 16 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 429185</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/98859880470"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Jornada de formación Excel Intermedio sesión 48</h3>
+                                    <p class="fecha">Fecha: 16 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 07:30 p.m</p>
+                                    <p class="hora">Código de acceso: 966557</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/96092855478"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page6">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Matemáticas desde 0: La parábola</h3>
+                                <p class="fecha">Fecha: 17 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 337392</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94552156087"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Club de lectura "Constelación de las palabras" Libro:Versos con sabor a mar</h3>
+                                <p class="fecha">Fecha: 18 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 06:00 p.m</p>
+                                <p class="hora">Código de acceso: 207788</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/92865277834"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Maratón de bases de datos: ProQuest</h3>
+                                    <p class="fecha">Fecha: 21 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 03:00 p.m</p>
+                                    <p class="hora">Código de acceso: 768126</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/92735753475"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page7">
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Uso de Microsoft PowerPoint para SINEP</h3>
+                                <p class="fecha">Fecha: 23 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 262485</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/95927782830"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                    <div class="box">							
+                        <div class="icon">
+                            <div class="info">
+                                <h3 class="title">Matemáticas desde 0: La elipse</h3>
+                                <p class="fecha">Fecha: 24 de Noviembre de 2022</p>
+                                <p class="hora">Hora: 03:00 p.m</p>
+                                <p class="hora">Código de acceso: 337392</p>
+                                <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94552156087"><img src="img/zoom.png" alt=""></a></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Aprende a manejar Canva</h3>
+                                    <p class="fecha">Fecha: 24 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 05:00 p.m</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/98175602217?pwd=MnBwZ0tETWt1dEJzOHBtMVozWUhldz09"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page8">
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Bibliocharla Navidad: alegría, cultura y literatura</h3>
+                                    <p class="fecha">Fecha: 25 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 06:30 p.m</p>
+                                    <p class="hora">Código de acceso: 373693</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/94380560994"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Jornada de capacitación cargue de trabajos, Normas APA y NTC</h3>
+                                    <p class="fecha">Fecha: 29 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 04:30 p.m</p>
+                                    <p class="hora">Código de acceso: 186979</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/99528503647"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                    <div class="anuncio">
+                        <div class="box">							
+                            <div class="icon">
+                                <div class="info">
+                                    <h3 class="title">Jornada de formación Excel Intermedio sesión 49</h3>
+                                    <p class="fecha">Fecha: 30 de Noviembre de 2022</p>
+                                    <p class="hora">Hora: 07:30 p.m</p>
+                                    <p class="hora">Código de acceso: 966557</p>
+                                    <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/96092855478"><img src="img/zoom.png" alt=""></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script  src="js/script.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $(".header").load("navbar.html");
+    });
+    $(function () {
+        $(".footer").load("footer.html");
+    });
+    </script>
+</body>
+</html>
+
